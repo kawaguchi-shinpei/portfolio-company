@@ -1,0 +1,372 @@
+.header__warp{
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header__logo{
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    background-image: url(../images/main.jpg);
+    background-size: cover;
+    height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo a{
+    text-decoration: none;
+    font-family: 游ゴシック, YuGothic, Helvetica, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.header__nav{
+    border-bottom: 4px solid #73A1C2;
+}
+
+.header__nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 960px;
+    margin: auto;
+}
+
+.header__nav li{
+    list-style: none;
+    text-align: center;
+    border-left: 1px solid #e5e5e5;
+}
+
+.header__nav li:nth-of-type(5){
+    border-right: 1px solid #e5e5e5 ;
+}
+
+.header__nav a{
+    display: block;
+    text-decoration: none;
+    font-family: 游ゴシック, YuGothic, Helvetica, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    width: 192px;
+    padding: 17px 0px 18px;
+    color: #333333;
+}
+
+.header__nav a:hover{
+    background-color: #73A1C2;
+    color: #ffffff;
+    transition: 0.7s;
+}
+
+/* pickup */
+.pickup{
+    background-color: #99C0B7;
+}
+
+.pickup__warp{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.pickup__warp ul{
+    width: 960px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.pickup__warp li{
+    background-color: #A9CAC2;
+    text-align: center;
+    list-style: none;
+    border-right: 1px solid #ffffff;
+    width: 240px;
+    height: 200px;
+}
+
+.pickup__warp li:nth-of-type(1){
+    border-left: 1px solid #ffffff;
+}
+
+.pickup__warp a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    transition: all .3s;
+  }
+  .button::before,
+  .button::after,
+  .button span::before,
+  .button span::after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 1px solid transparent;
+    transition: all .3s;
+    visibility: hidden;
+    box-sizing: content-box;
+  }
+  .button::before {
+    top: 10px;
+    left: 10px;
+    border-left-color: #ffffff;
+  }
+  .button::after {
+    bottom: 10px;
+    right: 10px;
+    border-right-color: #ffffff;
+  }
+  .button span::before {
+    bottom: 10px;
+    left: 10px;
+    border-bottom-color: #ffffff;
+  }
+  .button span::after {
+    top: 10px;
+    right: 10px;
+    border-top-color: #ffffff;
+  }
+ 
+  .button:hover::before,
+  .button:hover::after {
+    height: 89%;
+    visibility: visible;
+  }
+  .button:hover span::before,
+  .button:hover span::after {
+    width: 91%;
+    visibility: visible;
+  }
+
+
+/* about */
+.about{
+    position: relative;
+}
+
+.about__warp{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.about__left{
+    background-image: url(../images/bg__movie.jpg);
+    background-size: cover;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    height: 300px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.about__left h2{
+    font-size: 26px;
+    font-weight: 400;
+    padding-top: 80px;
+}
+
+.about__left p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.about__left a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 15px;
+    display: inline-block;
+    width: 284px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+}
+
+.about__left a::before{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 60px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../images/arrow.png);
+    background-size: cover;
+}
+
+.about__left a:hover{
+    color: #555;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.about__right{
+    background-image: url(../images/recruit.jpg);
+    background-size: cover;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 300px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.about__right h2{
+    font-size: 26px;
+    font-weight: 400;
+    padding-top: 80px;
+}
+
+.about__right p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.about__right a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 15px;
+    display: inline-block;
+    width: 284px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+}
+
+.about__right a::before{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 60px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../images/arrow.png);
+    background-size: cover;
+}
+
+.about__right a:hover{
+    color: #555;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+
+.news__warp{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 45px 0 60px;
+}
+
+.title h2{
+    color: #3D79A3;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.news__list{
+    width: 960px;
+    margin: 30px auto 0;
+}
+
+.news__list li{
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    padding: 18px 0 16px;
+}
+
+.news__list span{
+    font-family: 游ゴシック, YuGothic, Helvetica, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+}
+
+.news__date{
+    padding: 0 20px 0 10px;
+    font-size: 13px;
+}
+
+.news__category{
+    background-color: #73A1C2;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 3px 25px;
+}
+
+.news__text a{
+    text-decoration: none;
+    color: #333333;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.news__btn{
+    text-decoration: none;
+    border: 1px solid #34739f;
+    width: 284px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.news__btn a{
+    text-decoration: none;
+    color:#34739f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.news__btn a:hover{
+    background-color: #34739f;
+    color: #fff;
+}
+
+/* footer */
+footer{
+    background-color: #EEEEEE;
+    padding: 60px 0 70px;
+}
+
+.footer__warp{
+    width: 1200px;
+    margin: 0 auto;
+}
